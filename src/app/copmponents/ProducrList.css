@@ -1,0 +1,43 @@
+/* ProductList.css */
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; 
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.product-title {
+    font-size: 1.25rem; 
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-description,
+.product-price,
+.product-rating {
+    margin: 5px 0;
+} 
+h1{
+   text-align: center;
+}
