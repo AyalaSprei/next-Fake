@@ -7,9 +7,10 @@ function Books() {
    
   useEffect(() => {
     fetch('/api/products')
-    .then((res)=>res.json())
-    .then((data)=>setBooksProducts(data))
-  });
+      .then((res) => res.json())
+      .then((data) => setBooksProducts(data))
+      .catch((error) => console.error("Error fetching products:", error));
+  }, []); 
 
   return (
     <div>
