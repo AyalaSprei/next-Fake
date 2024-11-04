@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function ElectronicsPage() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("/api/products")
+    fetch("https://fakestoreapi.com/products/category")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
